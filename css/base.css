@@ -154,6 +154,7 @@ body header h1#siteNavbarTitle {
    color:rgb(198,83,83);
    font-size: 24px;
    line-height: 30px;
+   padding-left: 20px;
 }
 body header div.navTop {
    width: 100%;
@@ -310,7 +311,7 @@ article p.welcomeMessage {
       width:80%;
       margin-left: auto;
       margin-right: auto;
-      padding-left: 20px;
+      padding-left: 0px;
 
    } 
    body header h1#siteNavbarTitle br {
