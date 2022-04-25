@@ -1,0 +1,49 @@
+@charset "utf-8";
+/*
+   Author: Aaron Took
+   Date:   4/25/2022
+   
+   Filename: print-terminology.css
+   
+   This file contains print styles that are used for certain pages.
+*/
+
+/* ===========
+   Site Styles
+   ===========
+*/
+@page {
+   size: 8.5in 11in;
+   margin: 0.5in;
+}
+body {
+   box-shadow: none;
+}
+body header h1#siteNavbarTitle {
+   float: none;
+   text-align: center;
+   width:80%;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+body header h1#siteNavbarTitle br {
+   display: none;
+}
+body header h1#siteNavbarTitle br::after {
+   content:" ";
+}
+nav.horizontal,aside,footer {
+    display: none;
+}
+table {
+   position: relative;
+   top:0;
+   page-break-inside: avoid;
+}
+h1.tableTitle {
+    position: relative;
+    top:0;
+   page-break-before: always;
+   page-break-after:avoid;
+}

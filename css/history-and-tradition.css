@@ -1,0 +1,113 @@
+@import url("utils.css");
+/*
+   Author: Aaron Took
+   Date:   4/25/2022
+   
+   Filename: history-and-tradition.css
+   
+   This file contains the styles specifically for the history-and-tradition page of the AMAA website
+
+*/
+
+/* Figure Styles */
+figure {
+    display: block;
+    background-color: rgb(198,83,83);
+    margin: 20px auto 20px;
+    padding: 20px;
+    width: 40%;
+    border-radius: 8px;
+}
+figure img {
+    width: 100%;
+    display: block;
+}
+
+/* Figcaption Styles */
+figure figcaption {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 22px;
+    line-height: 26px;
+    color: white;
+}
+
+/* Table Styles */
+table.symbols {
+    background:white;
+    border: 10px solid rgb(114,49,49);
+    border-collapse: collapse;
+    font-size: 1em;
+    line-height: 1.25em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Table Cell Styles */
+table.symbols th, table.symbols td {
+    border: 1px solid black;
+    padding: 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+/* Table Caption Styles */
+table.symbols caption {
+    caption-side: bottom;
+    text-align: right;
+}
+/* Row Group Styles */
+table.schsymbolsedule thead {
+    background: rgb(198,83,83);
+    color: white;
+}
+table.symbols tfoot {
+    background: rgb(198,83,83);
+    color: white;
+}
+table.symbols thead tr {
+    height: 30px;
+}
+table.symbols tbody tr {
+    height: 40px;
+}
+/* Column Group Styles */
+col#firstCol {
+    background: rgb(198,83,83);
+    width: 16.66%;
+}
+th {
+    background: rgb(198,83,83);
+    color:white;
+}
+col.dayCols {
+    background:  white;
+    width: auto;
+}
+
+/* Image Styles */
+img.flag {
+    max-width: 100%;
+    width: auto;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+}
+
+/* Flag Caption Styles */
+p.flagCaption {
+    width: 80%;
+    margin:20px auto 20px;
+    text-align: center;
+}
+
+/* Image Credit Styles */
+p.imageCourtesy {
+    font-size: 10px;
+    word-wrap: break-word;
+    margin-left: 20px;
+    text-align: left;
+}
+p.imageCourtesy a:link,p.imageCourtesy a:active,p.imageCourtesy a:hover,p.imageCourtesy a:visited {
+    text-decoration: none;
+    color: inherit;
+}

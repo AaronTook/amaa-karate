@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+   Author: Aaron Took
+   Date:   4/25/2022
+   
+   Filename: contact.html
+   -->
+   
+   <title>American Martial Arts Academy | Contact</title>
+   <link rel="icon" type="image/x-icon" href="images/amaa_favicon.ico">
+   <link href="css/blank.css" rel="stylesheet" />
+   <link href="css/base.css" rel="stylesheet" />
+   <link href="css/tournaments.css" rel="stylesheet" /> <!-- Contains the 2-column design CSS -->
+   <link href="css/forms.css" rel="stylesheet" />
+   <link href="css/print.css" rel="stylesheet" media="print" />
+   <meta name="viewport" content="width=device-width,initial-scale=1" />
+   <meta name="keywords" content="amaa, american martial arts academy, contact, comment, faq" />
+   <meta name="description" content="AMAA Page with a contact form and frequently asked questions.">
+   <meta name="author" content="Aaron Took">
+   <meta charset="utf-8" />
+</head>
+
+<body>
+   <header>
+      <div class="navTop">
+      <h1 id="siteNavbarTitle">American <br />Martial <br />Arts <br />Academy</h1>
+      <img src="images/instructors-header.jpg" id="headerImg" alt="AMAA Instructors" />
+      </div>   
+   </header>
+   <nav class="horizontal"><a id="navicon"><img src="images/navicon.png" id="navicon" alt="" /></a>
+      <ul class="mainmenu">
+         <li><a href="home.html" id="active" class="submenuTitle">Home</a>
+            <ul class="submenu">
+               <li><a href="contact.html" class="submenuTitle" id="active">Contact</a></li>
+            </ul>
+         </li>
+         <li><a href="class-information.html" class="submenuTitle">Class Information</a>
+            <ul class="submenu">
+               <li><a href="lake-orion-mi.html" class="submenuTitle">Lake Orion, MI </a></li>
+               <li><a href="clarkston-mi.html" class="submenuTitle">Clarkston, MI </a></li>
+               <li><a href="englewood-oh.html" class="submenuTitle">Englewood, OH </a></li>
+            </ul>
+         </li>
+         <li><a href="training-and-testing.html" class="submenuTitle">Training and Testing</a></li>
+         <li><a href="tournaments.html" class="submenuTitle">Tournaments</a></li>
+         <li><a href="history-and-tradition.html" class="submenuTitle">History and Tradition</a>
+            <ul class="submenu">
+               <li><a href="terminology.html" class="submenuTitle">Terminology</a></li>
+            </ul>
+         </li>
+      </ul>
+   </nav>  
+   <aside>
+      <div class="mediaIcons">
+      <a id="media-facebook" target="_blank" href="https://www.facebook.com/LOKarate/?__tn__=%2Cd%2CP-R&eid=ARCFxLzNdgjplgm7YlWF8Zf4VNccq4EW5qG-5nYPaxGXtsaLZFtSlio2cijLLxN3yF3rug-24HALvH3T"> </a>
+      <a id="media-email" target="_blank" href="mailto:KarateAMAA@gmail.com"> </a>
+      <a id="media-youtube" target="_blank" href="https://www.youtube.com/channel/UC12kFpflVsJ8dDhBDTJZQYA"> </a>
+      </div>
+   </aside>
+   <article>
+      <h1 id="pageTitle">Contact Us</h1>
+      <div id="form">
+         <p class="welcomeMessage">Have comments, questions, or concerns?<br /><br />Feel free to contact us for any reason using the form below!<br />You can also reach us on <a class="externalLink" target="_blank" href="https://www.facebook.com/LOKarate/">Facebook</a> or by <a class="externalLink" target="_blank" href="mailto:KarateAMAA@gmail.com">Email</a> at KarateAMAA@gmail.com.<br /><br /></p>
+         <form id="contact" method="post" action="https://amaa-server-doggo.herokuapp.com/api/send/">
+            <legend><strong>Contact Form</strong></legend>
+            <h2 style="margin-top:10px;" class="formSectionLabel">Contact Information</h2>
+            <em style="font-size:10px;color:black;margin:5px;">* Indicates required field</em>
+            <input type="hidden" name="formKey" value="form_key_value">
+            <div class="formRow">
+               <label for="firstName">First Name *</label>
+               <input type="text" name="firstName" id="firstName" placeholder="First" required >
+            </div>
+            <div class="formRow">
+               <label for="lastName">Last Name *</label>
+               <input type="text" name="lastName" id="lastName" placeholder="Last" required >
+            </div>
+            <div class="formRow">
+               <label for="email">Email Address *</label>
+               <input type="email" name="email" id="email" required >
+            </div>
+            <div class="formRow">
+               <label for="phone">Cell Phone Number</label>
+               <input type="text" name="phone" id="phone" placeholder="nnn-nnn-nnnn"><!-- pattern="/^\\(?([0-9]{3})\\)?[-.\\s]?([0-9]{3})[-.\\s]?([0-9]{4})$/">-->
+            </div>
+            
+            <h2 class="formSectionLabel">Optional Information</h2>
+            <div class="formRow">
+               <input name="isStudent" id="isStudent" value="yes" type="checkbox" />
+               <label for="isStudent">I am a student at AMAA</label>
+            </div>
+            <div class="formRow">
+               <label for="mySchool">School</label>
+               <select name="mySchool" id="mySchool">
+                  <option value="" disabled selected hidden>Your School</option>
+                  <option value="LakeOrion">Lake Orion, MI</option>
+                  <option value="Clarkston">Clarkston, MI</option>
+                  <option value="Englewood">Englewood, OH</option>
+               </select>
+            </div>
+            <div class="formRow">
+               <label for="myClass">Class</label>
+               <select name="myClass" id="myClass">
+                  <option value="" disabled selected hidden>Your Class</option>
+                  <option value="LittleNinjas">Little Ninjas</option>
+                  <option value="Beginner">Beginner Classes</option>
+                  <option value="Advanced">Advanced Classes</option>
+                  <option value="BlackBelt">Black Belt</option>
+               </select>
+            </div>
+            
+            <h2 class="formSectionLabel">Message Information</h2>
+            <div class="formRow">
+               <input name="requestResponse" id="requestResponse" value="yes" type="checkbox" />
+               <label for="requestResponse">Send me a confirmation Email</label>
+            </div>
+            <div class="formRow">
+               <label for="comment">Comment *</label>
+               <textarea id="comment" name="comment" maxlength="1500" required></textarea>
+            </div>
+            <div class="buttons">
+               <input type="submit" value="Submit" />
+               <input type="reset" value="Reset" />
+            </div>
+         </form>
+      </div>
+      <br /><br />
+   </article>
+   <section>
+      <h1 id="pageTitle">Frequently Asked questions</h1>
+      <div id="faq">
+         <div class="faqCard">
+            <h1>Where are we located?</h1>
+            <p>We have schools in Southwest Michigan and Southeast Ohio. Our schools are located in <a href="lake-orion-mi.html">Lake Orion Michigan</a>, <a href="clarkston-mi.html">Clarkston Michigan</a>, and <a href="englewood-oh.html">Englewood Ohio</a>.</p>
+         </div>
+         <div class="faqCard">
+            <h1>Where can I register for classes?</h1>
+            <p>You can register either in person the first night of class or you can print and fill out the <a href="training-and-testing.html">registration forms</a> and bring them to class.</p>
+         </div>
+         <div class="faqCard">
+            <h1>How old do I have to be to take classes?</h1>
+            <p>Students ages 4-5 can register for our Little Ninjas classes at our Clarkston and Lake Orion schools. Anyone ages 6 and up can sign up for our beginner classes.</p>
+         </div>
+         <div class="faqCard">
+            <h1>Where can I get help with my requirements?</h1>
+            <p>You can find videos of our forms on our <a class="externalLink" target="_blank" href="https://www.youtube.com/channel/UC12kFpflVsJ8dDhBDTJZQYA">Youtube Channel</a>. If you have questions about other requirements, ask your instructor during class.</p>
+         </div>
+      </div>
+      <br /><br />
+   </section>
+   <br />
+   <footer>
+      <a href="contact.html">Contact Us</a> &#8226; <a href="tel:+13134070012">(313) 407-0012</a> &#8226; <a href="mailto:KarateAMAA@gmail.com">KarateAMAA@gmail.com</a>
+   </footer>
+</body>
+</html>

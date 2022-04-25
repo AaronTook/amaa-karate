@@ -1,0 +1,46 @@
+@charset "utf-8";
+/*
+   Author: Aaron Took
+   Date:   4/25/2022
+   
+   Filename: training-and-testing.css
+   
+   This file contains the styles specifically for the training-and-testing page of the AMAA website
+
+*/
+
+/* Video Gallery Styles */
+article a.downloadTestingForm button, section a.downloadTestingForm button {
+    cursor: pointer;
+    width: 300px;
+    height:40px;
+    min-width: auto;
+    background-color: rgb(198,83,83);
+    color:white;
+    border: 2px double rgb(114,49,49);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    float:left;
+    width: 30%;
+    margin-left: 1.6%;
+    margin-right: 1.6%;
+}
+div.pdfHolder {
+    width: 100;
+    display: block;
+}
+div.pdfHolder::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* =================================
+   Mobile Styles: 0px to 480px
+   =================================
+*/
+@media only screen and (max-width: 899px) {
+
+}

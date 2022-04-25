@@ -1,0 +1,94 @@
+@charset "utf-8";
+/*
+   Author: Aaron Took
+   Date:   4/25/2022
+   
+   Filename: print.css
+   
+   This file contains print styles that are used for most pages.
+*/
+
+/* ===========
+   Site Styles
+   ===========
+*/
+@page {
+   size: 8.5in 11in;
+   margin: 0.5in;
+}
+body {
+   box-shadow: none;
+}
+body header h1#siteNavbarTitle {
+   float: none;
+   text-align: center;
+   width:80%;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+body header h1#siteNavbarTitle br {
+   display: none;
+}
+body header h1#siteNavbarTitle br::after {
+   content:" ";
+}
+article {
+   background-color: white;
+}
+nav.horizontal,aside,footer,body header h1#siteNavbarTitle br,article div#instructors, article div#location {
+    display: none;
+}
+div.videoContainer {
+   display: none;
+}
+a::after :not(.galleryItem){
+   content: " (" attr(href) ") ";
+   word-wrap: break-word;
+}
+img, ol, ul {
+   page-break-inside: avoid;
+}
+p {
+   background-color: white;
+   /*page-break-inside: avoid;*/
+}
+p,ol,ul {
+   widows: 3;
+   orphans: 3;
+}
+.hideOnPrint {
+   display: none;
+}
+table {
+   /*page-break-before: always;*/
+   page-break-inside: avoid;
+}
+h1.tableTitle {
+   page-break-before: always;
+   page-break-after:avoid;
+}
+body header h1#siteNavbarTitle {
+   float: none;
+   text-align: center;
+   width:80%;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+body header h1#siteNavbarTitle br::after {
+   content:" ";
+}
+blockquote p {
+   background-color: rgb(198,83,83);
+}
+div#calendar img {
+   transform: rotate(90deg);
+   width: 11in;
+   page-break-before: always;
+   
+}
+/* =================================
+   Mobile Styles: 0px to 480px
+   =================================
+*/

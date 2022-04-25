@@ -1,0 +1,168 @@
+@charset "utf-8";
+@import url("utils.css");
+/*
+   Author: Aaron Took
+   Date:   4/25/2022
+   
+   Filename: home.css
+   
+   This file contains the styles specifically for the individual school pages of the AMAA website
+
+*/
+/* Article Styles */
+article iframe {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    max-width: 800px;
+    width: 80%;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+article div#location {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+article div.otherLinks {
+    width: 100%;
+    text-align: center;
+}
+article div.otherLinks a#calendar button, article div.otherLinks a#ourInstructors button {
+    cursor: pointer;
+    font-size: 24px;
+    width: 300px;
+    max-width: 40%;
+    height:50px;
+    min-width: auto;
+    background-color: rgb(198,83,83);
+    color:white;
+    border: 2px double rgb(114,49,49);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: auto;    
+}
+
+/* Calendar Styles */
+div#calendar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+div#calendar img {
+    width: 771px;
+    max-width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Instructor Gallery Styles */
+div#instructorGallery {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+div#instructorGallery div.instructor {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(135,135,135);
+}
+div#instructorGallery div.instructor img {
+    max-width: 95%;
+    border-radius: 4px;
+    max-height:235px;
+}
+div#instructorGallery div.instructor::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+div#instructorGallery div.instructorTwoWide{
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(135,135,135);
+}
+div#instructorGallery div.instructorTwoWide img {
+    max-width: 95%;
+    border-radius: 4px;
+    max-height:235px;
+}
+div.instructor2 {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(135,135,135);
+    padding-bottom: 40px;
+}
+div.instructor2Text {
+    width: 66.7%;
+    float: left;
+    text-align: left;
+    font-size: 12px;
+    color: rgb(135,135,135);
+}
+div.instructor2Text p {
+    width: 100%;
+    float: left;
+}
+div.instructor2Photo {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(135,135,135);
+}
+div.instructor2Photo img {
+    max-width: 95%;
+    border-radius: 4px;
+    max-height:235px;
+}
+p.instructorTitle {
+    width: 33%;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color:rgb(198,83,83);
+}
+div#instructors::after,div#calendar::after,div#location::after,div#information::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* =================================
+   Mobile Styles: 0px to 480px
+   =================================
+*/
+@media only screen and (max-width: 899px) {
+   /* Article Styles */
+   article div.otherLinks a#calendar button,article div.otherLinks a#ourInstructors button {
+       width:75%;
+       max-width: 90%;
+       float: none;   
+   }
+}
+@media only screen and (max-width: 699px) {
+    /* Instructor Gallery Styles */
+    div#instructorGallery div.instructor {
+        width: 50%;
+    }
+    p.instructorTitle {
+        width: 50%;
+    }
+    div.instructor2Text {
+        width: 50%;
+    }
+    div.instructor2Photo {
+        width: 50%;
+    }
+}

@@ -1,0 +1,417 @@
+@charset "utf-8";
+/*
+   Author: Aaron Took
+   Date:   4/25/2022
+   
+   Filename: base.css
+   
+   This File contains the site styles used throughout the entire AMAA website 
+   (Navbar styles, Basic styles, and Footer styles).
+*/
+
+/* ===========
+   Site Styles
+   ===========
+*/
+
+
+/* HTML and Body Styles */
+html {
+   /*height: 100%;*/
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+   
+}
+body {
+   background: rgb(255, 255, 255);   
+   box-shadow: rgb(51, 51, 51) 5px 0px 15px,
+               rgb(51, 51, 51) -5px 0px 15px;
+   margin: 0px auto;
+   min-height: 100%;
+   min-width: 100px;
+   max-width: 1024px;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-areas: "header"
+                        "nav"
+                        "media"
+                        "pageContent"
+                        "footer";
+}
+body > header > {grid-area: header;}
+body > article {grid-area:pageContent;}
+body > aside {grid-area:media;}
+body > nav {grid-area: nav;}
+body > footer {grid-area: footer;}
+
+hr.wideLine {
+   width: 80%;
+   height:4px;
+   margin-top:40px;
+   margin-bottom:40px;
+   background-color:rgb(51, 51, 51);
+}
+
+/* Article Styles */
+article, section {
+   color:#878787;
+   width:100%;
+   background-color: white;
+   clear: both;
+   line-height: 1.2em;
+}
+article::after, section::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+article img, section img {
+   display: block;
+   width: 100%;
+   max-width: 416px;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 8px;
+}
+article p, section p {
+   line-height: 1.4em;
+   padding: 10px;
+   font-size: 1.2em;
+}
+ol p, ul p {
+   font-size: 16px;
+   line-height: 20px;
+   padding: 5px;
+}
+article p a:active,article p a:link,article p a:visited, section p a:active, section p a:link, section p a:visited {
+   color: #878787;;
+   text-decoration: none;
+}
+article p a:hover, section p a:hover {
+   color: #878787;;
+   text-decoration: none;
+   font-weight: bold;
+}
+article p a.externalLink:active,article p a.externalLink:link,article p a.externalLink:visited,section p a.externalLink:active,section p a.externalLink:link,section p a.externalLink:visited {
+   color: rgb(198,83,83);
+   text-decoration: none;
+}
+article p a.externalLink:hover, section p a.externalLink:hover {
+   color: rgb(114,49,49);
+   text-decoration: none;
+   font-weight: bold;
+}
+article h1, section h1{
+    color: rgb(198,83,83);
+    padding:20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+}
+article h1#pageTitle, section h1#pageTitle {
+    float: right;
+    text-align: left;
+    font-size: 18px;
+    line-height: 22px;
+    color:rgb(198,83,83);
+}
+article h1#pageTitle > a:active, article h1#pageTitle > a:hover, article h1#pageTitle > a:link, article h1#pageTitle > a:visited, section h1#pageTitle > a:active, section h1#pageTitle > a:hover, section h1#pageTitle > a:link, section h1#pageTitle > a:visited  {
+    text-align: left;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    color:rgb(198,83,83);
+}
+article h1#pageTitle::after,section h1#pageTitle::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Body Header Styles */
+body header {
+   background: white;
+   text-align: center;
+   line-height: 1.2em;
+}
+body header img#headerImg {
+   display: block;
+   width: auto;
+   max-width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   border:2px double black;
+   border-radius:4px;
+   margin-top: 4px;
+   margin-bottom: 4px;
+}
+body header h1#siteNavbarTitle {
+   display: block;
+   float:left;
+   text-align: left;
+   padding-top: 20px;
+   color:rgb(198,83,83);
+   font-size: 24px;
+   line-height: 30px;
+}
+body header div.navTop {
+   width: 100%;
+   height: auto;
+}
+body header div.navTop::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+/* Horizonal Navigation Styles */
+nav.horizontal {
+   background-color: rgb(198,83,83);
+   min-height: 2em;
+   text-align:center;
+   line-height: 1.2em;
+}
+nav.horizontal li {
+   color: white;
+   display: block;
+   line-height: 2em;
+   text-transform: uppercase;
+}
+nav.horizontal a {
+   display: block;
+   font-size: 1em;
+}
+nav.horizontal a:visited, nav.horizontal a:link {
+   color: white;
+}
+nav.horizontal a:hover, nav.horizontal a:active {
+   background-color: rgb(114,49,49);
+   color: white;
+}
+nav.horizontal a#navicon:hover {
+   background-color: rgb(198,83,83);
+}
+
+/* Main Menu Styles */
+ul.mainmenu {
+   display: block;
+}
+ul.mainmenu > li {
+   text-indent: 15px;
+}
+ul.mainmenu > li a#active {
+   color: white;
+   background-color: rgb(114, 49, 49);
+}
+
+/* Submenu Styles */
+ul.submenu {
+   width: 100%;
+   background-color: rgb(114,63,63);
+}
+
+/* Submenu2 Styles */
+ul.submenu2 {
+    width: 100%;
+    background-color: rgb(114,63,63);
+}
+
+/* Navicon Styles */
+ a#navicon {
+   width:30px;
+   text-align: left;
+   padding:5px;
+}
+a#navicon::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/* Aside Styles */
+aside {
+   color:#878787;
+   display: block;
+   background-color: white;
+   line-height: 1.2em;
+}
+
+/* Footer Styles */
+body > footer {
+   background-color: rgb(114, 49, 49);
+   font-size: 0.9em;
+   text-align: center;
+   padding: 10px 0px;
+   position:relative;
+   bottom:0;
+   left: inherit;
+   min-width: 100px;
+   max-width: 1024px;
+   width: 100%;
+   line-height: 1.2em;
+}
+footer > a:link,footer > a:active,footer > a:visited {
+   color:black
+}
+footer > a:hover {
+   color: white;
+}
+/* Social Media Icon Styles */
+div.mediaIcons::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+#media-facebook {
+   display: block;
+   float: left;
+   width: 23px;
+   height: 23px;
+   background: url(../images/social-dark.png) 0 0;
+   background-color: white;
+   margin:5px;
+}
+#media-email {
+   display: block;
+   float: left;
+   width: 23px;
+   height: 23px;
+   background: url(../images/social-dark.png) -92px 0;
+   background-color: white;
+   margin:5px;
+}
+#media-youtube {
+   display: block;
+   float: left;
+   width: 23px;
+   height: 23px;
+   background: url(../images/social-dark.png) -253px 0;
+   background-color: white;
+   margin:5px;
+}
+article p.welcomeMessage {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px;
+}
+/* =================================
+   Mobile Styles: 0px to 480px
+   =================================
+*/
+@media only screen and (max-width: 899px) {
+   /* Header Styles */
+   body header img#headerImg {
+      width: 100%;
+      max-width: 100%;
+   }
+   body header h1#siteNavbarTitle {
+      float: none;
+      text-align: center;
+      width:80%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+
+   } 
+   body header h1#siteNavbarTitle br {
+      display: none;
+   }
+   body header h1#siteNavbarTitle br::after {
+      content:" ";
+   }
+
+   /* Horizontal Navbar Styles */
+    nav.horizontal a.submenuTitle,nav.horizontal a.menuTitle {
+        font-size:1.5em;
+        line-height:2.2em;
+    }
+    nav.horizontal a.submenuTitle2 {
+        font-size:1.3em;
+        line-height:1.6em;
+    }
+    nav.horizontal ul.mainmenu {
+       display: none;
+    }
+    a#navicon:hover+ul.mainmenu, nav.horizontal ul:hover {
+       display: block;
+    }
+    nav.horizontal a.submenuTitle {
+       text-align: left;
+    }
+    nav.horizontal ul.submenu li {
+       text-align: left;
+       text-indent:20px;
+    }
+    nav.horizontal ul.submenu2 li {
+      text-align: left;
+      text-indent:40px;
+   }
+   nav.horizontal ul#photoSubmenu li {
+      text-align: left;
+      text-indent:60px;
+   }
+   #photoMenuTitle {
+      font-size:1em;
+   }
+
+   /* Aside Styles */
+   aside {
+      width: 100%;
+   }
+}
+/* =================================
+   Tablet Styles: 481px and greater
+   =================================
+*/
+@media only screen and (min-width:900px) {
+   /* Horizontal Navbar Styles */
+    a#navicon {
+       display: none;
+    }
+    nav.horizontal a.submenuTitle2::after {
+        content: "▶";
+    }
+    ul.submenu {
+        display: none;
+        text-align: left;
+    }
+    a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+        display: block;
+    }
+    ul.submenu2 {
+        display: none;
+    }
+    a.submenuTitle2:hover+ul.submenu2, ul.submenu2:hover {
+        display: block;
+    }
+    ul.mainmenu > li {
+        float: left;
+        position: relative;
+        width: 20%;
+    }
+    ul.submenu {
+        box-shadow: rgb(51,51,51) 5px 5px 15px;
+        position: absolute;
+        width: 100%;
+    }
+    ul.submenu2 {
+        box-shadow: rgb(51,51,51) 5px 5px 15px;
+        position: absolute;
+        width: 100%;
+        left:100%;
+        top:0%;
+        bottom: 0%;
+        float:right;
+    }
+}
+/* =================================
+   Desktop Styles: 769px and greater
+   =================================
+*/
+@media only screen and (min-width: 769px) {
+    article, section {
+        float:left;
+        width:100%;
+    }
+}
+

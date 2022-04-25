@@ -1,0 +1,56 @@
+@import url("utils.css");
+/*
+   Author: Aaron Took
+   Date:   4/25/2022
+   
+   Filename: terminology.css
+   
+   This file contains the styles specifically for the terminology page of the AMAA website
+
+*/
+
+/* Table Styles */
+table.terminology {
+    background:white;
+    border: 10px solid rgb(114,49,49);
+    border-collapse: collapse;
+    font-size: 1em;
+    line-height: 1.25em;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Table Cell Styles */
+table.terminology th, table.terminology td {
+    border: 1px solid black;
+    padding: 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Row Group Styles */
+table.terminology tbody tr {
+    height: 40px;
+}
+
+/* Column Group Styles */
+th {
+    background: rgb(198,83,83);
+    color:white;
+}
+table.terminology tbody td {
+    width: 50%;
+}
+
+/* Table Title Styles */
+h1.tableTitle {
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(114,49,49);
+    padding-left: 40px;
+    font-size: 18px;
+    line-height: 22px;
+}

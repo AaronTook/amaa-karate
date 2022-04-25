@@ -1,0 +1,156 @@
+@charset "utf-8";
+/*
+   Author: Aaron Took
+   Date:   4/25/2022
+   
+   Filename: home.css
+   
+   This file contains the styles specifically for the home page of the AMAA website
+
+*/
+
+@import url("utils.css");
+
+/* Video Gallery Styles */
+div.videoContainer {
+    padding-top: 20px;
+}
+div.videoItem1 {
+    display: block;
+    float: left;
+    width: 50%;
+}
+div.videoItem2 {
+    display: block;
+    float: right;
+    width: 50%;
+}
+div.videoItem1 iframe, div.videoItem2 iframe {
+    width: 400px;
+    max-width: 90%;
+    height: 225px;
+    padding: 20px;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.videoItem1 h2, div.videoItem2 h2 {
+    display: block;
+    float: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;  
+}
+ /* School Gallery Styles */
+a.galleryItem {
+    display: block;
+}
+div.gallery {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox; 
+    display: -webkit-flex;
+    display: flex; /* Standard syntax */
+    height: auto;
+    max-height: 180px;
+}
+div.galleryItem {
+    margin:5px;
+    padding: 5px;
+    border:1px solid #ccc;
+    float: left;
+    width: 30%;
+    min-height: 100%;
+    position: relative;
+    -webkit-box: 1;
+    -moz-box: 1;
+    -ms-flexbox: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; /* Standard syntax */
+}
+div.galleryItem:hover {
+    border: 1px solid #777;
+}
+ 
+div.galleryItem img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+div.description {
+    width:100%;
+    margin: 15px;
+    /*padding: 15px;
+    display: block;*/
+    text-align: center;
+    vertical-align: bottom;
+    margin-left: auto;
+    margin-right: auto;
+}
+article h1 {
+    padding:20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+/* =================================
+   Mobile Styles: 0px to 480px
+   =================================
+*/
+@media only screen and (max-width: 899px) {
+   /* Video Gallery Styles */
+   div.videoContainer {
+    text-align: center;
+   }
+   div.videoItem1 {
+        width: 100%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.videoItem1 h2 {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    div.videoItem1 iframe {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.videoItem2 {
+        width: 100%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.videoItem2 h2 {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    div.videoItem2 iframe {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.videoItem1 iframe, div.videoItem2 iframe {
+        width: 400px;
+        max-width: 90%;
+        height: 225px;
+        padding: 2.5%;
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
