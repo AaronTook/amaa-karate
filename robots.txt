@@ -1,0 +1,7 @@
+User Agent: Googlebot
+Allow: .js
+Allow: .css
+Allow: .html
+Allow: .png
+Allow: .jpg
+Allow: .pdf
