@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://aarontook.github.io/amaa-karate/</loc>
+  <lastmod>2022-04-26T12:35:32+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://aarontook.github.io/amaa-karate/home.html</loc>
+  <lastmod>2022-04-26T12:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aarontook.github.io/amaa-karate/contact.html</loc>
+  <lastmod>2022-04-26T12:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aarontook.github.io/amaa-karate/class-information.html</loc>
+  <lastmod>2022-04-26T12:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aarontook.github.io/amaa-karate/lake-orion-mi.html</loc>
+  <lastmod>2022-04-26T12:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aarontook.github.io/amaa-karate/clarkston-mi.html</loc>
+  <lastmod>2022-04-26T12:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aarontook.github.io/amaa-karate/englewood-oh.html</loc>
+  <lastmod>2022-04-26T12:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aarontook.github.io/amaa-karate/training-and-testing.html</loc>
+  <lastmod>2022-04-26T12:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aarontook.github.io/amaa-karate/tournaments.html</loc>
+  <lastmod>2022-04-26T12:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aarontook.github.io/amaa-karate/history-and-tradition.html</loc>
+  <lastmod>2022-04-26T12:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aarontook.github.io/amaa-karate/terminology.html</loc>
+  <lastmod>2022-04-26T12:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+</urlset>
