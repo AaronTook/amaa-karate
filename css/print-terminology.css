@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*
-   Author: Aaron Took
+   Author: Joseph Lefkovitz
    Date:   4/25/2022
    
    Filename: print-terminology.css
@@ -16,6 +16,8 @@
    size: 8.5in 11in;
    margin: 0.5in;
 }
+
+/* Body Styles */
 body {
    box-shadow: none;
 }
@@ -33,9 +35,13 @@ body header h1#siteNavbarTitle br {
 body header h1#siteNavbarTitle br::after {
    content:" ";
 }
+
+/* Navbar Styles */
 nav.horizontal,aside,footer {
     display: none;
 }
+
+/* Tables Styles */
 table {
    position: relative;
    top:0;

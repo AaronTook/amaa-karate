@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url("utils.css");
 /*
-   Author: Aaron Took
+   Author: Joseph Lefkovitz
    Date:   4/25/2022
    
    Filename: tournaments.css
@@ -10,6 +10,7 @@
 
 */
 
+/* Body Styles */
 body {
     background: rgb(246,240,231);   
     box-shadow: rgb(51, 51, 51) 5px 0px 15px,
@@ -34,7 +35,7 @@ body {
  body > nav {grid-area: nav;}
  body > footer {grid-area: footer;}
  
-
+/* Article Styles */
 article h1 {
     padding:20px;
     display: block;
@@ -50,6 +51,8 @@ article p.welcomeMessage, section p.welcomeMessage {
 article img, section img{
     float:none;
 }
+
+/* Image Container Styles */
 div.imageContainer {
     padding: 20px;
     display: block;
@@ -60,6 +63,7 @@ div.imageContainer {
    =================================
 */
 @media only screen and (max-width: 899px) {
+    /* Body Styles */
     body {
         background: rgb(246,240,231);   
         box-shadow: rgb(51, 51, 51) 5px 0px 15px,

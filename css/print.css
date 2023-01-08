@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*
-   Author: Aaron Took
+   Author: Joseph Lefkovitz
    Date:   4/25/2022
    
    Filename: print.css
@@ -16,6 +16,8 @@
    size: 8.5in 11in;
    margin: 0.5in;
 }
+
+/* Body Styles */
 body {
    box-shadow: none;
 }
@@ -25,7 +27,6 @@ body header h1#siteNavbarTitle {
    width:80%;
    margin-left: auto;
    margin-right: auto;
-
 }
 body header h1#siteNavbarTitle br {
    display: none;
@@ -33,62 +34,66 @@ body header h1#siteNavbarTitle br {
 body header h1#siteNavbarTitle br::after {
    content:" ";
 }
-article {
-   background-color: white;
-}
-nav.horizontal,aside,footer,body header h1#siteNavbarTitle br,article div#instructors, article div#location {
-    display: none;
-}
-div.videoContainer {
-   display: none;
-}
-a::after :not(.galleryItem){
-   content: " (" attr(href) ") ";
-   word-wrap: break-word;
-}
-img, ol, ul {
-   page-break-inside: avoid;
-}
-p {
-   background-color: white;
-   /*page-break-inside: avoid;*/
-}
-p,ol,ul {
-   widows: 3;
-   orphans: 3;
-}
-.hideOnPrint {
-   display: none;
-}
-table {
-   /*page-break-before: always;*/
-   page-break-inside: avoid;
-}
-h1.tableTitle {
-   page-break-before: always;
-   page-break-after:avoid;
-}
 body header h1#siteNavbarTitle {
    float: none;
    text-align: center;
    width:80%;
    margin-left: auto;
    margin-right: auto;
-
 }
 body header h1#siteNavbarTitle br::after {
    content:" ";
 }
+
+/* Article Styles */
+article {
+   background-color: white;
+}
+
+/* Navbar Styles */
+nav.horizontal,aside,footer,body header h1#siteNavbarTitle br,article div#instructors, article div#location {
+    display: none;
+}
+
+/* Video Styles */
+div.videoContainer {
+   display: none;
+}
+
+/* Image, Paragraph, and List Styles*/
+img, ol, ul {
+   page-break-inside: avoid;
+}
+p {
+   background-color: white;
+}
+p,ol,ul {
+   widows: 3;
+   orphans: 3;
+}
+
+/* Class = HideOnPrint Styles*/ 
+.hideOnPrint {
+   display: none;
+}
+
+/* Table Styles */
+table {
+   page-break-inside: avoid;
+}
+h1.tableTitle {
+   page-break-before: always;
+   page-break-after:avoid;
+}
+
+/* Blockquote Styles */
 blockquote p {
    background-color: rgb(198,83,83);
 }
+
+/* Calendar Styles */
 div#calendar img {
    transform: rotate(90deg);
    width: 11in;
    page-break-before: always;
-   
 }
-/* =================================
-   Mobile Styles: 0px to 480px
-   =================================
-*/

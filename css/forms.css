@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*
-   Author: Aaron Took
+   Author: Joseph Lefkovitz
    Date:   4/25/2022
    
    Filename: forms.css
@@ -70,6 +70,10 @@ label {
    color: black;
    margin: 5px;
 }
+div.radioContainer label {
+   float: none;
+   color: white;
+}
 
 textarea {
    resize: vertical;
@@ -97,6 +101,16 @@ div.formRow, div.buttons {
 div.buttons {
    text-align: center;
 }
+div.radioContainer {
+   float: none;
+   width: 75%;
+   border: 2px solid rgb(114,49,49);
+   border-radius: 4px;
+   margin-left: 5%;
+   background-color: rgb(114,49,49);
+   color: white;
+}
+
 
 input {
     color: black;
@@ -108,6 +122,13 @@ input {
 
 input[type="checkbox"] {
    width: auto;
+}
+
+input[type="radio"] {
+   width: 10%;
+   float: left;
+   padding-right: 0px;
+   padding-left: 0px;
 }
 
 input[type="submit"],input[type="reset"] {
@@ -137,27 +158,3 @@ div.faqCard h1 {
    text-align: left;
    font-style: italic;
 }
-
-/* =================================
-   Mobile Styles: 0px to 480px
-   =================================
-*/
-
-@media only screen and (max-width: 899px) {
-
-}
-/* =================================
-   Tablet Styles: 481px and greater
-   =================================
-*/
-@media only screen and (min-width:900px) {
-
-}
-/* =================================
-   Desktop Styles: 769px and greater
-   =================================
-*/
-@media only screen and (min-width: 769px) {
-
-}
-

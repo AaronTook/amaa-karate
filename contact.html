@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
    <!--
-   Author: Aaron Took
+   Author: Joseph Lefkovitz
    Date:   4/25/2022
    
    Filename: contact.html
@@ -18,7 +18,7 @@
    <meta name="viewport" content="width=device-width,initial-scale=1" />
    <meta name="keywords" content="amaa, american martial arts academy, contact, comment, faq" />
    <meta name="description" content="AMAA Page with a contact form and frequently asked questions.">
-   <meta name="author" content="Aaron Took">
+   <meta name="author" content="Joseph Lefkovitz">
    <meta charset="utf-8" />
 </head>
 
@@ -63,11 +63,11 @@
       <h1 id="pageTitle">Contact Us</h1>
       <div id="form">
          <p class="welcomeMessage">Have comments, questions, or concerns?<br /><br />Feel free to contact us for any reason using the form below!<br />You can also reach us on <a class="externalLink" target="_blank" href="https://www.facebook.com/LOKarate/">Facebook</a> or by <a class="externalLink" target="_blank" href="mailto:KarateAMAA@gmail.com">Email</a> at KarateAMAA@gmail.com.<br /><br /></p>
-         <form id="contact" method="post" action="https://amaa-server-doggo.herokuapp.com/api/send/">
+         <form id="contact" method="post" action="https://AMAA-CONTACT.herokuapp.com/send/">
             <legend><strong>Contact Form</strong></legend>
             <h2 style="margin-top:10px;" class="formSectionLabel">Contact Information</h2>
             <em style="font-size:10px;color:black;margin:5px;">* Indicates required field</em>
-            <input type="hidden" name="formKey" value="form_key_value">
+            <input type="hidden" name="formKey" value="AMAA-KARATE-CONTACT">
             <div class="formRow">
                <label for="firstName">First Name *</label>
                <input type="text" name="firstName" id="firstName" placeholder="First" required >
@@ -82,7 +82,11 @@
             </div>
             <div class="formRow">
                <label for="phone">Cell Phone Number</label>
-               <input type="text" name="phone" id="phone" placeholder="nnn-nnn-nnnn"><!-- pattern="/^\\(?([0-9]{3})\\)?[-.\\s]?([0-9]{3})[-.\\s]?([0-9]{4})$/">-->
+               <input type="tel" name="phone" id="phone" placeholder="nnn-nnn-nnnn" pattern="/^\\(?([0-9]{3})\\)?[-.\\s]?([0-9]{3})[-.\\s]?([0-9]{4})$/">
+            </div>
+            <div class="formRow">
+               <input name="doNotContact" id="doNotContact" value="yes" type="checkbox" />
+               <label for="doNotContact">Please do not contact me</label>
             </div>
             
             <h2 class="formSectionLabel">Optional Information</h2>
@@ -91,13 +95,22 @@
                <label for="isStudent">I am a student at AMAA</label>
             </div>
             <div class="formRow">
-               <label for="mySchool">School</label>
-               <select name="mySchool" id="mySchool">
+               <label>School</label>
+               <div class="radioContainer">
+                  <label for="LakeOrion">Lake Orion, MI</label>
+                  <input name="mySchool" id="LakeOrion" value="Lake Orion, MI" type="radio" />
+                  <label for="Clarkston">Clarkston, MI</label>
+                  <input name="mySchool" id="Clarkston" value="Clarkston, Mi" type="radio" />
+                  <label for="Englewood">Englewood, OH</label>
+                  <input name="mySchool" id="Englewood" value="Englewood, OH" type="radio" />
+               </div>
+               <!--<select name="mySchool" id="mySchool">
                   <option value="" disabled selected hidden>Your School</option>
                   <option value="LakeOrion">Lake Orion, MI</option>
                   <option value="Clarkston">Clarkston, MI</option>
                   <option value="Englewood">Englewood, OH</option>
-               </select>
+               </select>-->
+               <br>
             </div>
             <div class="formRow">
                <label for="myClass">Class</label>
@@ -109,11 +122,11 @@
                   <option value="BlackBelt">Black Belt</option>
                </select>
             </div>
-            
+
             <h2 class="formSectionLabel">Message Information</h2>
             <div class="formRow">
-               <input name="requestResponse" id="requestResponse" value="yes" type="checkbox" />
-               <label for="requestResponse">Send me a confirmation Email</label>
+               <input name="requestConfirmation" id="requestConfirmation" value="yes" type="checkbox" />
+               <label for="requestConfirmation">Send me a confirmation Email</label>
             </div>
             <div class="formRow">
                <label for="comment">Comment *</label>
