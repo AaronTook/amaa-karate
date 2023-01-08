@@ -131,7 +131,7 @@ input[type="radio"] {
    padding-left: 0px;
 }
 
-input[type="submit"],input[type="reset"] {
+input[type="submit"],input[type="reset"],input[type="button"] {
    height: 50px;
    max-width: 200px;
    width: 45%;
